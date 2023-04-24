@@ -1,21 +1,15 @@
-public class Main implements Comparable<Main> {
-public int age;
-public String name;
-    Main(int age, String name){
-        this.age = age;
-        this.name = name;
-    }
+import java.util.Arrays;
 
-    @Override
-    public int compareTo(Main o) {
-        if (this.age>o.age) return 1;
-        else if (this.age>o.age) return 1;
-        else return -1;
-    }
+public class Main {
+static int[] niggers = {5 , 1 , 4 , 12 , 53 , 14 , 53};
 
     public static void main(String[] args) {
-        Main main1 = new Main(17,"Mariya");
-        Main main2 = new Main(18, "Darya");
-        System.out.println(main1.compareTo(main2));
+        Arrays.sort(niggers);
+        for (int nigger : niggers){
+            System.out.print(nigger+" ");
+        }
+        System.out.println();
+        System.out.println(Arrays.binarySearch(niggers, 1000));
+
     }
 }
